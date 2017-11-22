@@ -16,6 +16,10 @@
         <title>Test PHP</title>
     </head>
     <body>
-        <?php echo '<p>Bonjour le monde</p>'; ?>
+        <?php
+            echo '<p>Bonjour le monde</p>';
+            use Kreait\Firebase\Factory;
+            $firebase = (new Factory)->create();
+        ?>
     </body>
 </html>
